@@ -23,4 +23,3 @@ The game ends once all cards have been correctly matched. The player receives a 
 This game was created on the basis repository - the starter code for _all_ Udacity students.
 
 For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
-# memoryGame

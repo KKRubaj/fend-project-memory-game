@@ -1,9 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <title>Matching Game</title>
-    <meta name="description" content="">
+    <meta name="description" content="Memory game">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
     <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
     <link rel="stylesheet" href="css/app.css">
@@ -16,17 +17,35 @@
         </header>
 
         <section class="score-panel">
-        	<ul class="stars">
-        		<li><i class="fa fa-star"></i></li>
-        		<li><i class="fa fa-star"></i></li>
-        		<li><i class="fa fa-star"></i></li>
-        	</ul>
+          	<ul class="stars">
+            		<li><i class="fa fa-star"></i></li>
+            		<li><i class="fa fa-star"></i></li>
+            		<li><i class="fa fa-star"></i></li>
+          	</ul>
 
-        	<span class="moves">3</span> Moves
+          	<span class="moves">3</span> Moves
+            <span class="timer">0 mins 0 secs</span>
 
             <div class="restart">
-        		<i class="fa fa-repeat"></i>
-        	</div>
+          	  	<i class="fa fa-repeat"></i>
+          	</div>
+
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+
+                    <span class="close">&times;</span>
+                    <div>
+                        <i class="fa fa-thumbs-up"></i>
+                    </div>
+                    <h3>Congratulations!  You Won!</h3>
+                    <ul class="modal-score">
+                        <li>With<span class="modal-moves">0</span>Moves and<span class="modal-stars">0</span>Stars</li>
+                        <li>in the Time<span class="modal-time">0</span></li>
+                        <li>Woooow!</li>
+                    </ul>
+                    <button id="modalBtn">Play again</button>
+                </div>
+            </div>
         </section>
 
         <ul class="deck">
