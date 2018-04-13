@@ -1,20 +1,26 @@
 # Memory Game Project
 
-## Table of Contents
-
-* [Instructions](#instructions)
-* [Contributing](#contributing)
+If you want to play this game, just open the file **index.html** on any browser.
 
 ## Instructions
 
-The starter project has some HTML and CSS styling to display a static version of the Memory Game project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+### How The Game Works
 
-To get started, open `js/app.js` and start building out the app's functionality
+The game board consists of sixteen "cards", it means eight different pairs of cards, each with different symbols on one side. The cards are arranged randomly with the symbol face down.
 
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+The gameplay rules are very simple: flip over two hidden cards at a time to locate the ones that match!
+If the cards match, both cards stay flipped over.
+If the cards do not match, both cards are flipped face down.
+
+The player starts with 3 stars. After 15 moves the number of stars decreases to 2 stars, then above 22 moves only 1 star remains. Less moves - better stars rating.
+
+A restart button allows the player to reset the game board.
+
+The game ends once all cards have been correctly matched. The player receives a message with the result - how many stars he scored, how many moves he made and how much time it took him and possibility to play again.
 
 ## Contributing
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+This game was created on the basis repository - the starter code for _all_ Udacity students.
 
 For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
+# memoryGame
