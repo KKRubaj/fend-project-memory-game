@@ -38,10 +38,10 @@ h1 {
  */
 
 .deck {
-    width: 660px;
-    min-height: 680px;
+    max-width: 680px;
+    height: 680px;
     background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
-    padding: 32px;
+    padding: 2em;
     border-radius: 10px;
     box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
     display: flex;
@@ -69,17 +69,20 @@ h1 {
     transform: rotateY(0);
     background: #02b3e4;
     cursor: default;
+    pointer-events: none;
 }
 
 .deck .card.show {
-    font-size: 33px;
+    font-size: 2.5rem;
 }
 
 .deck .card.match {
     cursor: default;
     background: #02ccba;
-    font-size: 33px;
+    font-size: 2.5rem;
+    pointer-events: none;
 }
+
 
 /*
  * Styles for the Score Panel
@@ -87,7 +90,7 @@ h1 {
 
 .score-panel {
     text-align: left;
-    width: 345px; 
+    width: 320px;
     margin-bottom: 10px;
 }
 
@@ -106,7 +109,7 @@ h1 {
 }
 
 .score-panel .timer {
-    margin-left: 40px;
+    margin-left: 1.5em;
 }
 
 .score-panel .restart {
@@ -118,7 +121,7 @@ h1 {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top:200px;
+    padding-top: 10em;
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -132,7 +135,7 @@ h1 {
     position: relative;
     background-color: #fefefe;
     margin: auto; /* 15% from the top and centered */
-    padding: 25px;
+    padding: 1.5em;
     text-align: center;
     border: 1px solid #888;
     border-radius: 8px;
@@ -203,10 +206,55 @@ h1 {
     cursor: pointer;
 }
 
+/* Button in the modal */
 #modalBtn {
     font-size: 18px;
     padding: 10px 20px;
     margin-top: 40px;
     background-color: #aa7ecd;
     border-radius: 8px;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 460px) and (max-width: 680px) {
+    .deck {
+        height: 85vh;
+        margin: 0 0 1em;
+    }
+
+    .deck .card {
+        height: 15vh;
+        width: 19vw;
+    }
+
+    .modal-content {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 459px) {
+    .deck {
+        padding: 1em;
+        height: 65vh;
+        align-content: space-between;
+        margin: 0 0 1em;
+    }
+
+    .deck .card {
+        height: 13vh;
+        width: 20vw;
+    }
+
+    .score-panel .stars {
+        margin-left: 0.5em;
+    }
+
+    .score-panel .restart {
+        margin-right: 0.7em;
+    }
+
+    .modal-content {
+        width: 70%;
+    }
 }
