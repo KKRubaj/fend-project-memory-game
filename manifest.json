@@ -1,0 +1,13 @@
+{
+  "short_name": "Memory Game",
+  "start_url": "/?homescreen=1",
+  "icons": [{
+    "src": "img/icon.jpg",
+    "sizes": "144x144",
+    "type": "image/jpg"
+  }],
+  "theme_color": "#000000",
+  "background_color": "#FFFFFF",
+  "display": "fullscreen",
+  "orientation": "portrait"
+}

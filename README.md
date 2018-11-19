@@ -1,7 +1,7 @@
 # Memory Game
 
 This is a classic memory game for concentration exercise.
-If you want to play this game, just open the file **index.html** in any browser.
+If you want to play this game [click here] (https://kkrubaj.github.io/memory-game/) or open the file **index.html** in any browser.
 
 ## Instructions
 
