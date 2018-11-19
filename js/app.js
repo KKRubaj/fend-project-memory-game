@@ -268,3 +268,16 @@ restart.addEventListener('click', function() {
 document.addEventListener('DOMContentLoaded', function() {
     startGame();
 });
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./js/sw.js')
+    .then(() => {
+      console.log('serviceWorker registered')
+    })
+    .catch((err) => {
+      console.log(`There was an error with the serviceWorker: ${err}`);
+
+    });
+  });
+}
